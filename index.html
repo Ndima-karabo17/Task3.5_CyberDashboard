@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Cloud Shield</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+  <main class="dashboard-card">
+     <div class="dashboardSider">
+      <div class="first second"><img src="image/logo.jpg"/>NCS</div>
+      <div class="first"><a href="index.html">Dashboard</a></div>
+        <div class="first"><a href="soon.html">Affilates</a></div>
+        <div class="first"><a href="soon.html">ID Monitaring</a></div>
+        <div class="first"><a href="soon.html">Database</a></div>
+        <div class="first"><a href="soon.html">Apps</a></div>
+         
+        </div>
+    <div class="all">
+       
+    
+    <div class="card">
+    
+        <h2>Recovering systems & disaster recovery</h2>
+        <p>Regular disaster recovery testing</p>
+        <ul class="status">
+          <li>🟢 Active</li>
+          <li>Updated: 2 hours ago</li>
+        </ul>
+  </div>
+
+<div class="card">
+  <h2>Boot logs</h2>
+  <p></p>
+  <ul class="status">
+    <li>🟢 Active</li>
+    <li>Updated 2 minutes ago</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Startup repair</h2>
+  <p></p>
+  <ul class="status">
+    <li>🟡 Warning</li>
+    <li>Updated 5 minutes ago</li>
+  </ul>
+</div>
+<div class="card">
+   <h2>🕵️ Threat Detection</h2>
+      <p>Identifies and alerts on suspicious activity in the system.</p>
+      <ul class="status">
+        <li>Ransomware: ⚠️ Detected</li>
+        <li>Phishing Attempts: ✅ Blocked</li>
+        <li>Malware: ❌ Needs Attention</li>
+      </ul>
+</div>
+<div class="card">
+  <h2>👤 User Access Logs</h2>
+      <p>Lists login attempts and system access events by users.</p>
+     <ul class="status">
+        <li>Failed Logins: 5</li>
+        <li>Admin Accesses: 12</li>
+        <li>Last Login: 10 min ago</li>
+      </ul>
+</div>
+<div class="card">
+  <h2>IoT device connection status</h2>
+  <p>It  refers to the current state of an IoT device's ability to communicate
+     with the network or cloud platform it's connected to</p>
+     <ul>
+      <li>Detected failed</li>
+      <li>🔴 Fault </li>
+      <li>Detected: 5 minutes ago</li>
+     </ul>
+</div>
+<div class="">
+<div id="myPlot">
+
+</div>
+</div>
+    </div>
+
+
+  </main>
+  <script>
+const xArray = ["IoT device connection status", "User Access Logs", "Startup repair", "Boot logs", "Recovering systems & disaster recovery"];
+const yArray = [55, 49, 44, 24, 15];
+
+const layout = {title:"Nexus Cloud Shield"};
+
+const data = [{labels:xArray, values:yArray, type:"pie"}];
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+</body>
+</html>
