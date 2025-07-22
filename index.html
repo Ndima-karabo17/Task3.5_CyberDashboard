@@ -1,141 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Cloud Shield</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexus Cloud Shield</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
   <main class="dashboard-card">
-     <div class="dashboardSider">
+    <div class="dashboardSider">
       <div class="first second"><img src="image/logo.jpg"/>NCS</div>
       <div class="first"><a href="index.html">Dashboard</a></div>
-        <div class="first"><a href="soon.html">Affilates</a></div>
-        <div class="first"><a href="soon.html">ID Monitaring</a></div>
-        <div class="first"><a href="soon.html">Database</a></div>
-        <div class="first"><a href="soon.html">Apps</a></div>
-         
-        </div>
+      <div class="first"><a href="soon.html">Affilates</a></div>
+      <div class="first"><a href="soon.html">ID Monitaring</a></div>
+      <div class="first"><a href="soon.html">Database</a></div>
+      <div class="first"><a href="soon.html">Apps</a></div>
+    </div>
+
     <div class="all">
-       
-    
-    <div class="card">
-    
+      <div class="card">
         <h2>Recovering systems & disaster recovery</h2>
         <p>Regular disaster recovery testing</p>
         <ul class="status">
           <li>🟢 Active</li>
           <li>Updated: 2 hours ago</li>
         </ul>
-  </div>
+      </div>
 
-<div class="card">
-  <h2>Boot logs</h2>
-  <p></p>
-  <ul class="status">
-    <li>🟢 Active</li>
-    <li>Updated 2 minutes ago</li>
-  </ul>
-</div>
+      <div class="card">
+        <h2>Boot logs</h2>
+        <ul class="status">
+          <li>🟢 Active</li>
+          <li>Updated 2 minutes ago</li>
+        </ul>
+      </div>
 
-<div class="card">
-  <h2>Startup repair</h2>
-  <p></p>
-  <ul class="status">
-    <li>🟡 Warning</li>
-    <li>Updated 5 minutes ago</li>
-  </ul>
-</div>
-<div class="card">
-   <h2>🕵️ Threat Detection</h2>
-      <p>Identifies and alerts on suspicious activity in the system.</p>
-      <ul class="status">
-        <li>Ransomware: ⚠️ Detected</li>
-        <li>Phishing Attempts: ✅ Blocked</li>
-        <li>Malware: ❌ Needs Attention</li>
-      </ul>
-</div>
-<div class="card">
-  <h2>👤 User Access Logs</h2>
-      <p>Lists login attempts and system access events by users.</p>
-     <ul class="status">
-        <li>Failed Logins: 5</li>
-        <li>Admin Accesses: 12</li>
-        <li>Last Login: 10 min ago</li>
-      </ul>
-</div>
-<div class="card">
-  <h2>IoT device connection status</h2>
-  <p>It  refers to the current state of an IoT device's ability to communicate
-     with the network or cloud platform it's connected to</p>
-     <ul>
-      <li>Detected failed</li>
-      <li>🔴 Fault </li>
-      <li>Detected: 5 minutes ago</li>
-     </ul>
-</div>
-<div class="ploting">
-<div id="myPlot">
+      <div class="card">
+        <h2>Startup repair</h2>
+        <ul class="status">
+          <li>🟡 Warning</li>
+          <li>Updated 5 minutes ago</li>
+        </ul>
+      </div>
 
-</div>
-</div>
-<div class="newDiv">
-  <table >
-<tr>
-    <th>DATE</th>
-    <th>NAME</th>
-    <th>TYPE</th>
-    <th>LEVEL OF RISK</th>  
-</tr>
-<tr>
-  <td>24-05-2025</td>
-  <td>Recovering systems & disaster recovery</td>
-  <td>Cyberattacks</td>
-  <td>70%</td>
-</tr>
-<tr>
-  <td>19-04-2025</td>
-  <td>Boot logs</td>
-  <td>Malware</td>
-  <td>20%</td>
-</tr>
-<tr>
-<td>02-01-2025</td>
-<td>Startup repair</td>
-<td>Failed update</td>
-<td>20%</td>
-</tr>
-<tr>
- <td>21-06-2025</td>
- <td>Threat Detection</td>
- <td>Malware</td>
- <td>Depends on  risk level for threat detection </td>
-</tr>
-<tr>
-<td>02-07-2025</td>
-<td>User Access Logs</td>
-<td>Phishing</td>
-<td>90%</td>
-</tr>
+      <div class="card">
+        <h2>🕵️ Threat Detection</h2>
+        <p>Identifies and alerts on suspicious activity in the system.</p>
+        <ul class="status">
+          <li>Ransomware: ⚠️ Detected</li>
+          <li>Phishing Attempts: ✅ Blocked</li>
+          <li>Malware: ❌ Needs Attention</li>
+        </ul>
+      </div>
 
-</table>
-</div>
+      <div class="card">
+        <h2>👤 User Access Logs</h2>
+        <p>Lists login attempts and system access events by users.</p>
+        <ul class="status">
+          <li>Failed Logins: 5</li>
+          <li>Admin Accesses: 12</li>
+          <li>Last Login: 10 min ago</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>IoT device connection status</h2>
+        <p>Current state of an IoT device's ability to communicate with the network.</p>
+        <ul>
+          <li>Detected failed</li>
+          <li>🔴 Fault </li>
+          <li>Detected: 5 minutes ago</li>
+        </ul>
+      </div>
+
+   <div class="ploting">
+        <div id="myPlot" style="width:100%;max-width:600px;"></div>
+      </div>
+
+    
+    
+      
+ 
+      <div class="newDiv">
+        <table>
+          <tr>
+            <th>DATE</th>
+            <th>NAME</th>
+            <th>TYPE</th>
+            <th>LEVEL OF RISK</th>
+          </tr>
+          <tr>
+            <td>24-05-2025</td>
+            <td>Recovering systems & disaster recovery</td>
+            <td>Cyberattacks</td>
+            <td>70%</td>
+          </tr>
+          <tr>
+            <td>19-04-2025</td>
+            <td>Boot logs</td>
+            <td>Malware</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>02-01-2025</td>
+            <td>Startup repair</td>
+            <td>Failed update</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>21-06-2025</td>
+            <td>Threat Detection</td>
+            <td>Malware</td>
+            <td>Depends on risk level for threat detection</td>
+          </tr>
+          <tr>
+            <td>02-07-2025</td>
+            <td>User Access Logs</td>
+            <td>Phishing</td>
+            <td>90%</td>
+          </tr>
+        </table>
+      
+     <!-- </div>
+       <div class="ploting">
+        <canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
+      </div>-->
+
     </div>
-
-
   </main>
-  
-  <script>
-const xArray = ["IoT device connection status", "User Access Logs", "Startup repair", "Boot logs", "Recovering systems & disaster recovery"];
-const yArray = [55, 49, 44, 24, 15];
 
-const layout = {title:"Nexus Cloud Shield"};
 
-const data = [{labels:xArray, values:yArray, type:"pie"}];
-
-Plotly.newPlot("myPlot", data, layout);
-</script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
